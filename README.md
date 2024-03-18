@@ -17,27 +17,28 @@ TBA
 
 ## Supported File Systems
 
-### Apple HFS & HFS+
-
-Apple Hierarchical File System, introduced in Macintosh System 2.1, and Apple
-Hierarchical File System Plus, introduced with MacOS 8.1.
-
-### HP HFS/HPFS, JFS/VxFS
-
-High Performance File System for very early HP/UX systems. Journaling File
-System/Veritas File System for later HP/UX 10 and 11 systems.
-
-### Apple MFS
-
-Macintosh File System, for original Macintosh 128K, 512K, and MacXL.
-
-### Apple ProDOS and DOS 3.3
-
-Apple II ProDOS for 8- and 16-bit machines, and Apple II DOS 3.3 for 8-bit machines.
-
-### MS-DOS FAT12, FAT16, FAT32, exFAT
-
-FAT12 for MS-DOS floppy disk images, and others for larger hard drive images.
+* Apple
+  - HFS & HFS+
+    * Apple Hierarchical File System, introduced in Macintosh System 2.1
+    * Apple Hierarchical File System Plus, introduced with MacOS 8.1
+  - MFS
+    * Macintosh File System, for original Macintosh 128K, 512K, and MacXL
+  - ProDOS
+    * Apple II ProDOS for 8-bit (Apple II) and 16-bit (Apple IIgs)
+  - DOS 3.3
+    * Apple II DOS 3.3 for 8-bit Apple II
+* HP
+  - HFS/HPFS
+    * High Performance File System for early HP/UX systems
+  - JFS/VxFS
+    * Journaling File System/Veritas File System for later HP/UX 10 and 11 systems
+* Microsoft
+  - FAT12
+    * Floppy Disk (360KB to 2.88MB) Images
+  - FAT16, FAT32, exFAT
+    * Hard Drive Images
+  - NTFS
+    * Versions 1.0-3.1
 
 ## Administrative
 
