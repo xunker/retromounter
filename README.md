@@ -15,12 +15,24 @@ Do not expect useful version numbers or a meaningful changelog for quite some ti
 
 TBA
 
-## Supported File Systems
+## Planed Supported File Systems
 
 * Apple
-  - HFS & HFS+
+  - HFS
     * Apple Hierarchical File System, introduced in Macintosh System 2.1
+  - HFS+
     * Apple Hierarchical File System Plus, introduced with MacOS 8.1
+* Microsoft
+  - FAT12
+    * Floppy Disk (360KB to 2.88MB) Images
+  - FAT16, FAT32, exFAT
+    * Hard Drive Images
+  - NTFS
+    * Versions 1.0-3.1
+
+## Hoped-for Future File Systems
+
+* Apple
   - MFS
     * Macintosh File System, for original Macintosh 128K, 512K, and MacXL
   - ProDOS
@@ -29,16 +41,12 @@ TBA
     * Apple II DOS 3.3 for 8-bit Apple II
 * HP
   - HFS/HPFS
-    * High Performance File System for early HP/UX systems
+    * High Performance File System for early HP/UX systems, HP's implementation of UFS
   - JFS/VxFS
     * Journaling File System/Veritas File System for later HP/UX 10 and 11 systems
-* Microsoft
-  - FAT12
-    * Floppy Disk (360KB to 2.88MB) Images
-  - FAT16, FAT32, exFAT
-    * Hard Drive Images
-  - NTFS
-    * Versions 1.0-3.1
+* IBM
+  - JFS/eJFS
+    * IBM's implementation of UFS
 
 ## Administrative
 
