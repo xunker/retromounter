@@ -1,0 +1,2 @@
+# Configuration options added by RetroMounter install script
+[all]

@@ -1,0 +1,11 @@
+# Enable a second SD card slot connected to SDIO interface.
+# Using the SDIO interface instead of the slower SPI interface gives us about
+# 10 times the read speed (>7MB/sec on a Pi Zero 1).
+#
+# `poll_once=off` is important because there is (as yet) no hardware support
+# for the "Card Detect" pin on the slot, and so the Pi will poll the card
+# periodically to see if one has been inserted. Without this directive, the
+# system won't know when a card is inserted unless it is present at boot.
+#
+# IMPORTANT: on a Pi Zero 2, this will _DISABLE_ the onboard WiFi/Bluetooth.
+dtoverlay=sdio,poll_once=off,bus_width=4

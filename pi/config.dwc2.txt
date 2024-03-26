@@ -1,0 +1,4 @@
+# Enable the USB port on a Pi Zero/Zero 2/3 to behave as a USB "Gadget"
+# WARNING: you WILL NOT be able to plug in a keyboard, card reader, etc, to the USB port while it is
+in this mode. To disable Gadget mode, comment out this line.
+dtoverlay=dwc2,dr_mode=peripheral

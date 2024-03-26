@@ -1,0 +1,6 @@
+# Enable SPI and enable an EJC28J60 ethernet device on the SPI pins.
+# This device is slow, ~700KB/sec on a Pi Zero 1, but it's all you've it you're
+# operating in USB gadget mode and want to make outbound connection on a Pi
+# Zero 1 or on a Pi Zero 2 with built-in WiFi disabled.
+dtparam=spi=on
+dtoverlay=enc28j60,int_pin=5

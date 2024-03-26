@@ -1,0 +1,26 @@
+# Configuration for RetroMounter
+---
+mode_msd_gadget: false # true, false
+mode_ethernet_gadget: false # true, false
+mode_smb_server: true # true, false
+card_device: /dev/mmcblk1 # NOT your boot device, which is /dev/mmcblk0
+network_devices: # devices that the Samba server will bind to
+  - eth0
+  - wlan0
+logdir: "/var/log/retromounter"
+formats:
+  all:
+    # options that will apply to any mounted foreign file system
+  hfs: # Apple Hierarchical File System, introduced in Macintosh System 2.1
+  hfs_plus: # Apple Hierarchical File System Plus, introduced with MacOS 8.1
+    ignore_journal_warning: true # true, false
+    allow_gte_2gb_mounting: true # true, false
+  hfs_and_hfs_plus:
+    # These options that apply to both HFS and HFS plus - they will we used IN
+    # ADDITION to individual options for HFS and HFS+
+    fix_invalid_32_bit_timestamps: true # true, false
+  jfs: # HP/UX JFS/UFS (for older HP-9000 machines)
+  mfs: # Macintosh File System, for original Macintosh 128K, 512K, and MacXL
+  vxfs: # HP/UX Veritas FS (for newer HP-9000 machines)
+  prodos: # Apple II ProDOS
+  dos33: # Apple II DOS 3.3 -- NOT MS-DOS 3.3
